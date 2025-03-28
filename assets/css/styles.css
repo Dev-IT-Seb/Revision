@@ -10,9 +10,22 @@
     font-family:"NOM FONT";
     src: url("");
 }
+/** ---------------------------------------------- **/
+/* BACKGROUD IMAGE */
+body {
+    background-image: url("../images/background/nyc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /** ------------------------------------------------
                     HEADER
 --------------------------------------------------**/
+
+
+
+
+
+
 
 
 
