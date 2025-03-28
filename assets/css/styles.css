@@ -1,3 +1,4 @@
+/** ---------------------------------------------- **/
 /** RESET VALEUR **/
 * {
     margin: 0;
@@ -5,10 +6,10 @@
     box-sizing: border-box;
 }
 /** ---------------------------------------------- **/
-/** DECLARER VARIABLE FONT - IMPORTER FONT **/
+/** HELVETICA **/
 @font-face {
-    font-family:"NOM FONT";
-    src: url("");
+    font-family:"Helvetica Bold";
+    src: url("../fonts/helvetica/Helvetica-Bold.ttf");
 }
 /** ---------------------------------------------- **/
 /* BACKGROUD IMAGE */
@@ -20,30 +21,114 @@ body {
 /** ------------------------------------------------
                     HEADER
 --------------------------------------------------**/
+header {
+    position: fixed;
+    background-color: #000000;
+    border-bottom: solid 1px white;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+header nav{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
+header nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+header nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Helvetica Bold";
+    color: #ffffff;
+}
 /** ------------------------------------------------
                     MAIN
 --------------------------------------------------**/
+.container-pictures{
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.container-pictures .carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00000067;
+    border: solid 1px #ffffff6c;
+    border-radius: 3%;
+    margin-top: 1rem;
+    padding: 0.5rem 4rem;
+}
 
+h2{
+    padding-bottom: 0.5rem;
+    color: #ffffff;
+}
 
+.container-pictures .carousel .action{
+    padding: 0.8rem;
+}
 
+.cta-left{
+    padding: 0.2rem 0.5rem;
+    background-color: #000000;
+    color: #ffffff;
+    margin-right: 2rem;
+    border: none;
+    border: solid 1px #ffffffb5;
+    border-radius: 5%;
+    font-size: 14px;
+}
 
+.cta-left:hover{
+    background-color: #be1818;
+    color: #000000;
+}
 
+.cta-right{
+    padding: 0.2rem 0.8rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border: solid 1px #ffffffb5;
+    border-radius: 5%;
+    font-size: 14px;
+}
 
+.cta-right:hover{
+    background-color: #be1818;
+    color: #000000;
+}
+
+.carousel img{
+    width: 600px;
+    height: 350px;
+    border: solid 2px #ffffff98;
+}
+.carousel img:nth-child(2){
+    display:none;
+}
+.carousel img:nth-child(3){
+    display:none;
+}
+/* container-info */
 
 /** ------------------------------------------------
                     FOOTER
