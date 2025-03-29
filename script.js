@@ -3,7 +3,7 @@
 //------------------------------------------------------------------------//
 //
 //------------------------------CAROUSEL----------------------------------//
-// BOUTONS
+// BOUTONS CAROUSEL
 let btnleft = document.querySelector(".cta-left");
 let btnright = document.querySelector(".cta-right");
 //SELECTION DE TOUTES LES IMAGES
@@ -18,7 +18,7 @@ for (let i = 0; i < images.length; i++) {
 // AFFICHAGE DE LA 1ER IMAGE
 images[index].style.display = "block";
 //-----------------------------------------------//
-//BUTTON DROITE
+//BOUTON DROITE
 btnright.addEventListener("click", function() {
 
   images[index].style.display = "none";
@@ -26,10 +26,19 @@ btnright.addEventListener("click", function() {
   images[index].style.display = "block";
 });
 //-----------------------------------------------//
-//BUTTON GAUCHE
+//BOUTON GAUCHE
 btnleft.addEventListener("click", function() {
   images[index].style.display = "none";
   index = (index - 1 + images.length) % images.length;
   images[index].style.display = "block";
 });
 //------------------------------------------------------------------------//
+//------------- FORMULAIRE --------------//
+// SELECTEURS Formulaire
+let lastname = document.getElementById("nom");
+let firstname = document.getElementById("prenom");
+let birthday = document.getElementById("date");
+let courriel = document.getElementById("email");
+// BOUTON Envoyer
+let sendForm = document.getElementById("sendForm");
+//---------------------------------------------------//
