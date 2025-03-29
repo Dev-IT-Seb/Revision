@@ -116,18 +116,17 @@ h2{
     background-color: #be1818;
     color: #000000;
 }
-
+/* -------------------------------------------------*/
 .carousel img{
     width: 600px;
     height: 350px;
     border: solid 2px #ffffff98;
 }
-.carousel img:nth-child(2){
-    display:none;
-}
-.carousel img:nth-child(3){
-    display:none;
-}
+
+
+
+
+
 /* container-info */
 
 /** ------------------------------------------------
