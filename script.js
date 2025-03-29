@@ -20,7 +20,6 @@ images[index].style.display = "block";
 //-----------------------------------------------//
 //BOUTON DROITE
 btnright.addEventListener("click", function() {
-
   images[index].style.display = "none";
   index = (index + 1) % images.length;
   images[index].style.display = "block";
@@ -39,6 +38,68 @@ let lastname = document.getElementById("nom");
 let firstname = document.getElementById("prenom");
 let birthday = document.getElementById("date");
 let courriel = document.getElementById("email");
-// BOUTON Envoyer
+//-> BOUTON Envoyer
 let sendForm = document.getElementById("sendForm");
+//RESULTAT Formulaire
+let resultForm = document.getElementById("result-form");
 //---------------------------------------------------//
+//
+if(sendForm){
+  
+  // Bouton formulaire
+  sendForm.addEventListener("click", function(event){
+    
+    //Empeche le rechargement
+    event.preventDefault();
+
+    //----------------------------------------------------------//
+    //--- Tableau message erreur
+    let error = [];
+
+    if(lastname.value.length < 5){
+      
+      //---------------------------------------//
+      //--- AFFICHAGE RESULTAT ERROR
+      //
+      //-- Ajout dans tableau
+      error.push(lastname.value)
+      //
+      for(key in error) {
+
+        console.log(error[key]);
+
+      //--- Block affichage resultat
+      let contentHTML = `
+        <div class="result-formulaire">
+          <h4 class="red">Erreur dans votre formulaire</h4>
+          <p>${lastname.value}</p>
+        <div>
+      `;
+      //
+      //--- Affichage Block resultat
+      resultForm.innerHTML = contentHTML;
+      //
+       };
+    }
+    //---------------------------------------//
+    //--- AFFICHAGE RESULTAT OK
+    //
+    else{
+    //--- Block affichage resultat
+    let contentHTML = `
+      <div class="result-formulaire">
+        <h4>Vos informations envoyées</h4>
+        <p>${lastname.value}</p>
+        <p>${firstname.value}</p>
+        <p>${birthday.value}</p>
+        <p>${courriel.value}</p>
+        <p>Merci pour votre participation !</p>
+        <p>Nous reviendrons vers vous rapidement</p>
+      <div>
+    `;
+    //--- Affichage Block resultat
+    resultForm.innerHTML = contentHTML;
+    //
+    }
+  });
+};

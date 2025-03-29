@@ -180,6 +180,31 @@ form{
     font-family: "Helvetica Bold";
     font-size: 14px;
 }
+
+.result-formulaire{
+    background-color: #000000a0;
+    border-radius: 7px;
+    color: #ffffff;
+    margin-top: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-formulaire h4{
+    font-size: 15px;
+    font-family: "Helvetica Bold";
+    padding-bottom: 1rem;
+}
+
+.result-formulaire p:nth-child(6){
+    color: #ffffff;
+    font-family: "Helvetica Bold";
+    padding-top: 1rem;
+}
 /** ------------------------------------------------
                     FOOTER
 --------------------------------------------------**/
