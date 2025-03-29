@@ -7,9 +7,15 @@
 }
 /** ---------------------------------------------- **/
 /** HELVETICA **/
+/* BOLD */
 @font-face {
     font-family:"Helvetica Bold";
     src: url("../fonts/helvetica/Helvetica-Bold.ttf");
+}
+/* LIGHT */
+@font-face {
+    font-family:"Helvetica Light";
+    src: url("../fonts/helvetica/helvetica-light.ttf");
 }
 /** ---------------------------------------------- **/
 /* BACKGROUD IMAGE */
@@ -50,7 +56,7 @@ header nav ul{
 
 header nav ul li a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
     font-family: "Helvetica Bold";
     color: #ffffff;
@@ -59,7 +65,7 @@ header nav ul li a{
                     MAIN
 --------------------------------------------------**/
 .container-pictures{
-    padding-top: 5rem;
+    padding-top: 7rem;
     padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
@@ -122,13 +128,88 @@ h2{
     height: 350px;
     border: solid 2px #ffffff98;
 }
+.container-info {
+    padding: 5rem;
+    color: #ffffff;
+    font-family: "Helvetica Bold";
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50rem;
+}
+/*--- SECTION FORMULAIRE ---*/
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.formulaire .title {
+    background-color: #000000a0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+}
 
+.formulaire .title h3{
+    font-size: 18px;
+    font-family: "Helvetica Bold";
+    text-transform: capitalize;
+    color: #ffffff;
+}
 
+.formulaire .title p{
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Helvetica Light";
+}
 
-
-/* container-info */
-
+form{
+    background-color: #000000a0;
+    color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    gap: 2rem;
+    font-family: "Helvetica Bold";
+    font-size: 14px;
+}
 /** ------------------------------------------------
                     FOOTER
 --------------------------------------------------**/
+footer {
+    background-color: #000000;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 4rem;
+}
+footer nav ul li a{
+    color: #ffffff;
+    font-family: "Helvetica Bold";
+    font-size: 15px;
+    text-decoration: none;
+}
+/*------------------------------------*/
