@@ -89,10 +89,10 @@ if(sendForm){
     let contentHTML = `
       <div class="result-formulaire">
         <h4 class="green">Vos informations envoyées</h4>
-        <p>${lastname.value}</p>
-        <p>${firstname.value}</p>
-        <p>${birthday.value}</p>
-        <p>${courriel.value}</p>
+        <p>Votre nom de famille : ${lastname.value}</p>
+        <p>Votre prénom : ${firstname.value}</p>
+        <p>Votre date de naissance: ${birthday.value}</p>
+        <p>Votre adresse mail : ${courriel.value}</p>
         <p>Merci pour votre participation !</p>
         <p>Nous reviendrons vers vous rapidement</p>
       <div>

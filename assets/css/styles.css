@@ -129,7 +129,7 @@ h2{
     border: solid 2px #ffffff98;
 }
 .container-info {
-    padding: 5rem;
+    padding-top: 3rem;
     color: #ffffff;
     font-family: "Helvetica Bold";
     font-size: 18px;
@@ -164,7 +164,7 @@ h2{
 }
 
 .formulaire .title p{
-    font-size: 15px;
+    font-size: 17px;
     color: #ffffff;
     font-family: "Helvetica Light";
 }
@@ -182,20 +182,22 @@ form{
 }
 
 .result-formulaire{
-    background-color: #000000a0;
+    background-color: #000000;
     border-radius: 7px;
     color: #ffffff;
     margin-top: 2rem;
+    margin-bottom: 10rem;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
 }
 
 .result-formulaire h4{
-    font-size: 15px;
+    font-size: 19px;
     font-family: "Helvetica Bold";
     padding-bottom: 1rem;
 }
@@ -204,6 +206,8 @@ form{
     color: #ffffff;
     font-family: "Helvetica Bold";
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 19px;
 }
 .red {
     color: #ff0000;
@@ -216,13 +220,13 @@ form{
 --------------------------------------------------**/
 footer {
     background-color: #000000;
-    height: 4rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 footer nav {
     display: flex;
