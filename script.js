@@ -56,7 +56,7 @@ if(sendForm){
     //--- Tableau message erreur
     let error = [];
 
-    if(lastname.value.length < 5){
+    if(lastname.value.length <= 2 || lastname.value.length >= 11){
       
       //---------------------------------------//
       //--- AFFICHAGE RESULTAT ERROR
@@ -72,7 +72,7 @@ if(sendForm){
       let contentHTML = `
         <div class="result-formulaire">
           <h4 class="red">Erreur dans votre formulaire</h4>
-          <p>${lastname.value}</p>
+          <p>Votre prénom doit être compris entre 3 et 10 caractères maximum : ${lastname.value}</p>
         <div>
       `;
       //
@@ -88,7 +88,7 @@ if(sendForm){
     //--- Block affichage resultat
     let contentHTML = `
       <div class="result-formulaire">
-        <h4>Vos informations envoyées</h4>
+        <h4 class="green">Vos informations envoyées</h4>
         <p>${lastname.value}</p>
         <p>${firstname.value}</p>
         <p>${birthday.value}</p>
